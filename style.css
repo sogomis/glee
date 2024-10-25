@@ -2,6 +2,8 @@ body {
     background-color: #ffffff;
     color: #3b3b3b; /* Couleur du texte */
     font-family: 'Quicksand', sans-serif;
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le rembourrage par défaut */
 }
 
 /* Supprimer le soulignement des liens */
@@ -135,4 +137,91 @@ header {
 .mozaic-button .icon-button:hover .material-icons-outlined {
     transform: scale(1.2); /* Zoomer à 120% au survol */
     transition: transform 0.3s ease; /* Animation lors du survol */
+}
+
+
+
+
+.banner {
+    display: flex; /* Utiliser flexbox pour aligner le contenu */
+    align-items: center; /* Centrer verticalement le contenu */
+    padding: 40px; /* Espacement autour de la bannière */
+    background-image: url('img/home-banner.png'); /* Chemin de l'image d'arrière-plan */
+    background-size: cover; /* L'image couvre toute la section */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centrer l'image */
+    color: #3b3b3b; /* Couleur du texte */
+    width: auto; /* Laisse le width à auto pour ajuster selon l'image */
+    height: 550px ;
+    margin: 0; /* Supprime toute marge */
+}
+
+.banner-content {
+    flex: 1; /* Permet au contenu de prendre l'espace restant */
+    padding-right: 20px; /* Espacement à droite pour séparer le texte */
+    padding-left: 100px;
+}
+
+.banner h1 {
+    font-size: 4em; /* Taille du titre */
+    margin-bottom: 10px; /* Espacement sous le titre */
+    color: #3b3b3b; /* Couleur du texte */
+    line-height: 0.8; /* Ajustement de l'espacement entre les lignes */
+}
+
+.banner p {
+    font-size: 1.2em; /* Taille du texte descriptif */
+    margin-bottom: 20px; /* Espacement sous le texte descriptif */
+    color: #3b3b3b; /* Couleur du texte */
+}
+
+.cta-button {
+    display: inline-block; /* Affichage en bloc pour le bouton */
+    padding: 20px 20px; /* Espacement autour du texte du bouton */
+    background-color: #3b3b3b; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    text-decoration: none; /* Pas de soulignement */
+    transition: background-color 0.3s; /* Transition pour le survol */
+}
+
+.cta-button .material-icons-outlined {
+    margin-left: 10px; /* Espacement entre le texte et l'icône */
+    font-size: 18px; /* Taille de l'icône */
+    vertical-align: middle;
+}
+
+.cta-button:hover {
+    background-color: #afc8d3; /* Couleur de fond au survol */
+}
+
+
+
+.columns {
+    display: flex; /* Utilise Flexbox pour les colonnes */
+    justify-content: space-between; /* Espace entre les colonnes */
+}
+
+.column {
+    display: flex; /* Utilise Flexbox pour le contenu de chaque colonne */
+    align-items: flex-start; /* Aligne les éléments au début (icône en haut) */
+    flex: 1;
+    background-color: #f9f9f9; /* Couleur de fond pour chaque colonne (facultatif) */
+    padding: 50px 100px; /* Espacement interne */
+}
+
+.column i {
+    font-size: 50px; /* Taille de l'icône */
+    margin-right: 15px; /* Espacement entre l'icône et le texte */
+    color: #3b3b3b; /* Couleur de l'icône */
+}
+
+.content h3 {
+    margin: 0; /* Supprime la marge du titre */
+    font-size: 20px; /* Taille du titre */
+}
+
+.content p {
+    margin-top: 5px; /* Espacement au-dessus du paragraphe */
+    color: #666; /* Couleur du texte du paragraphe */
+    font-size: 12px; /* Taille du titre */
 }
