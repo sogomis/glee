@@ -1,0 +1,138 @@
+body {
+    background-color: #ffffff;
+    color: #3b3b3b; /* Couleur du texte */
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Supprimer le soulignement des liens */
+a {
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+
+/* Styles pour le header */
+header {
+    display: flex; /* Pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Centrer verticalement */
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo img {
+    height: 30px;
+}
+
+/* Menu principal */
+.menu {
+    display: flex;
+    gap: 40px; /* Espace entre les liens */
+    flex-grow: 1; /* Permet au menu de prendre tout l'espace disponible */
+    justify-content: center; /* Centre le menu */
+}
+
+.menu a {
+    text-decoration: none; /* Pas de soulignement */
+    font-weight: bold;
+    color: #3b3b3b;
+    position: relative; /* Nécessaire pour le positionnement de l'élément ::after */
+    padding-bottom: 5px; /* Pour donner de l'espace pour la ligne */
+}
+
+.menu a::after {
+    content: ''; /* Nécessaire pour afficher le pseudo-élément */
+    position: absolute; /* Positionnement relatif à l'élément parent */
+    left: 50%; /* Commencer au centre */
+    bottom: 0; /* Aligner à la base de l'élément */
+    width: 0; /* Initialement 0, pour créer l'effet d'ouverture */
+    height: 2px; /* Hauteur de la ligne */
+    background-color: #3b3b3b; /* Couleur de la ligne */
+    transition: width 0.3s ease, left 0.3s ease; /* Animation lors de l'ouverture */
+}
+
+.menu a:hover::after {
+    width: 100%; /* Remplir toute la largeur au survol */
+    left: 0; /* Aligner la ligne à gauche */
+}
+
+/* Bouton de recherche */
+.research-button button {
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f6; /* Couleur de fond du bouton */
+    border: none;
+    width: 45px; /* Largeur du bouton */
+    height: 45px; /* Hauteur du bouton */
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.research-button .material-icons-outlined {
+    color: #3b3b3b; /* Couleur de l'icône de recherche */
+}
+
+/* Zoom de l'icône au survol */
+.research-button .icon-button:hover .material-icons-outlined {
+    transform: scale(1.2); /* Zoomer à 120% au survol */
+    transition: transform 0.3s ease; /* Animation lors du survol */
+}
+
+/* Bouton d'achats' */
+.cart-buttons button {
+    display: flex;
+    align-items: center;
+    background-color: #f9d6b5; /* Couleur de fond du bouton */
+    color: #3b3b3b;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.cart-buttons .icon-button {
+    background: none; /* Pas de fond pour les boutons */
+    border: none; /* Pas de bordure pour les boutons */
+    cursor: pointer; /* Curseur pointer au survol */
+    display: flex; /* Pour centrer l'icône */
+    align-items: center; /* Aligner verticalement */
+    justify-content: space-around;
+}
+
+.cart-buttons .icon-button .material-icons-outlined {
+    color: #3b3b3b; /* Couleur des icônes */
+    margin: 0px 20px;
+}
+
+/* Zoom des icônes au survol */
+.cart-buttons .icon-button:hover .material-icons-outlined {
+    transform: scale(1.2); /* Zoomer à 120% au survol */
+    transition: transform 0.3s ease; /* Animation lors du survol */
+}
+
+
+/* Bouton affichage mosaïque */
+.mozaic-button button {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #afc8d3; /* Couleur de fond du bouton */
+    color: #e4e3e3;
+    border: none;
+    padding: 10px;
+    width: 45px; /* Largeur du bouton */
+    height: 45px; /* Hauteur du bouton */
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mozaic-button .icon-button .material-icons-outlined {
+    color: #fff; /* Couleur des icônes */
+}
+
+/* Zoom de l'icône au survol */
+.mozaic-button .icon-button:hover .material-icons-outlined {
+    transform: scale(1.2); /* Zoomer à 120% au survol */
+    transition: transform 0.3s ease; /* Animation lors du survol */
+}

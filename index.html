@@ -1,1 +1,65 @@
-Hello World! This is my first project.
+<!DOCTYPE html> <!-- Déclare le type de document comme HTML5 -->
+<html lang="fr"> <!-- Aide à définir la langue de base du contenu pour les outils d’accessibilité, les moteurs de recherche, et les navigateurs -->
+<head>
+    <meta charset="UTF-8"> <!-- Définit le codage de caractères en UTF-8 pour afficher correctement les caractères spéciaux -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet l'adaptation de la page aux différentes tailles d'écran, utile pour le responsive design -->
+    
+    <title>GLEE</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    
+    <!-- Lien vers Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Lien vers la librairie Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS externe pour styliser la page -->
+</head>
+
+<body>
+    <header>
+        <!-- Logo du site -->
+        <div class="logo">
+            <img src="img/logo-glee.svg" alt="Logo GLEE">
+        </div>
+
+        <!-- Menu principal -->
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Bouton de recherche -->
+        <div class="research-button">
+            <button>
+                <a href="#" class="icon-button" aria-label="Rechercher">
+                <i class="material-icons-outlined">search</i>
+            </button>
+        </div>
+
+        <!-- Bouton d'achats -->
+        <div class="cart-buttons">
+        <button>
+            <a href="#" class="icon-button" aria-label="Ajouter aux favoris">
+            <i class="material-icons-outlined">favorite_border</i>
+            </a>
+            <a href="#" class="icon-button" aria-label="Accéder au panier">
+            <i class="material-icons-outlined">shopping_cart</i>
+            </a>
+        </button>
+        </div>  
+
+        <!-- Bouton affichage mosaïque -->
+        <div class="mozaic-button">
+        <button>
+            <a href="#" class="icon-button" aria-label="Affichage mosaïque">
+            <i class="material-icons-outlined">apps</i>
+        </button>
+        </div>
+</body>
+
+</html>
